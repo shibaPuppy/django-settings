@@ -112,7 +112,7 @@ MANAGERS = ADMINS
 # See: https://django-environ.readthedocs.io/en/latest/#supported-types
 DATABASES = {
     # 'default': env.db('DATABASE_URL', default='postgres:///main'),
-    'default': env.db('DATABASE_URL', default='mysql://<DB_USER>:<DB_PASSWORD>@<DB_IP>:<DB_PORT>/<DB_NAME>'),
+    'default': env.db('DATABASE_URL', default='mysql://root:root@localhost:1915/test'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 

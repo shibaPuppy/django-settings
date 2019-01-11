@@ -1,78 +1,8 @@
-RB
-==
+# RB
 
-RB
-
-.. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
-     :target: https://github.com/pydanny/cookiecutter-django/
-     :alt: Built with Cookiecutter Django
-
-
-:License: MIT
-
-
-Settings
---------
-
-Moved to settings_.
-
-.. _settings: http://cookiecutter-django.readthedocs.io/en/latest/settings.html
-
-Basic Commands
---------------
-
-Setting Up Your Users
-^^^^^^^^^^^^^^^^^^^^^
-
-* To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
-
-* To create an **superuser account**, use this command::
-
-    $ python manage.py createsuperuser
-
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
-
-Test coverage
-^^^^^^^^^^^^^
-
-To run the tests, check your test coverage, and generate an HTML coverage report::
-
-    $ coverage run manage.py test
-    $ coverage html
-    $ open htmlcov/index.html
-
-Running tests with py.test
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-::
-
-  $ py.test
-
-Live reloading and Sass CSS compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Moved to `Live reloading and SASS compilation`_.
-
-.. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
-
-
-
-
-
-Sentry
-^^^^^^
-
-Sentry is an error logging aggregator service. You can sign up for a free account at  https://sentry.io/signup/?code=cookiecutter  or download and host it yourself.
-The system is setup with reasonable defaults, including 404 logging and integration with the WSGI application.
-
-You must set the DSN url in production.
-
-
-Deployment
-----------
-
-The following details how to deploy this application.
-
-
-
-
+1. 초기화 속도 : 프로젝트의 기본 구성은 1 시간을 넘지 않아야합니다.
+2. 팀 개발 : 각 팀 구성원은 개발의 모든 단계에서 프로젝트를 쉽게 전개해야합니다.
+3. 배포 : 개발자가 프로젝트를 배포 할 때 개발자를 저주해서는 안되지만 눈을 흘끗 보아도됩니다.
+4. 확장성 : 새 앱이나 라이브러리를 추가해도 문제가 없어야합니다.
+5. 구조 : 프로젝트는 멋지고 깔끔한 구조 여야합니다.
+6. 환경 : 프로젝트는 시스템과 독립적으로 작동해야합니다. 주어진 템플리트의 개발을 위해 우리는 대중적인 템플리트와 템플리트 엔진을 비교하기로 결정했습니다.
